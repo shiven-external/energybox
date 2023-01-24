@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "react-app",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "@typescript-eslint", "react-hooks"],
+  "root": true,
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      { "allowTypedFunctionExpressions": false }
+    ],
+    "@typescript-eslint/no-explicit-any": ["error"],
+    "@typescript-eslint/no-floating-promises": "off",
+    "react-hooks/rules-of-hooks": ["error"],
+    "react-hooks/exhaustive-deps": ["error"]
+  },
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  }
+}

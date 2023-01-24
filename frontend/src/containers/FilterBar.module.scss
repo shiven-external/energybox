@@ -1,0 +1,33 @@
+.serviceTypeFilterContainer {
+  select {
+    height: 32px;
+    width: 150px;
+  }
+}
+
+.trainLineColorFilterContainer {
+  margin-top: 16px;
+
+  select {
+    height: 32px;
+    width: 150px;
+  }
+}
+
+.carCountFilterContainer {
+  display: flex;
+  margin: 16px 0;
+
+  .carCountMaxLabel {
+    margin-left: 16px;
+  }
+
+  input {
+    height: 24px;
+    width: 56px;
+  }
+
+  .error {
+    color: red;
+  }
+}
