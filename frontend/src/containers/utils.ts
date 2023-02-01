@@ -42,7 +42,6 @@ export const selectTrainsByCarCount = (
   const maxValue = inputtedMaxCarCountValue ?? Infinity;
   const minValue = inputtedMinCarCountValue ?? 0;
 
-  console.log('minmax', minValue, maxValue);
   return trains.filter((train): boolean => {
     if (train.CarCount >= minValue && train.CarCount <= maxValue) return true;
 
